@@ -29,7 +29,7 @@
                             class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/categories' && 'underline'">Attractions</NuxtLink>
                         <NuxtLink to="/booking-faqs" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/booking-faqs' && 'underline'">FAQ</NuxtLink>
                         <NuxtLink to="/blogs" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/blogs' && 'underline'">Blogs</NuxtLink>
-                        <Nuxtlink to="/contact-us" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/contact-us' && 'underline'">Contact</NuxtLink>
+                        <NuxtLink to="/contact-us" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/contact-us' && 'underline'">Contact</NuxtLink>
                     </div>
 
                     <!-- Social Icons -->

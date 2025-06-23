@@ -31,18 +31,6 @@
         </div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="bg-white py-4 pt-6">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex items-center gap-2 text-sm">
-                <Icon name="ph:house" class="" />
-                <NuxtLink to="/" class=" hover:textColor">Home</NuxtLink>
-                <Icon name="ph:caret-right" class="text-gray-400" />
-                <span class="textColor">Contact</span>
-            </div>
-        </div>
-    </nav>
-
     <!-- Main Content -->
     <div class="max-w-7xl mx-auto px-4 py-8 lg:py-12">
         <div class="grid lg:grid-cols-3 gap-8 lg:gap-12">
