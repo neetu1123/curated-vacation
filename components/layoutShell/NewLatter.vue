@@ -54,11 +54,11 @@
                 </div>
 
                 <!-- Right Side - Form -->
-                <div class="lg:w-1/2 bg-orange-400 text-white p-8 lg:p-12 relative">
+                <div class="lg:w-1/2 bg-[#004369] text-white p-8 lg:p-12 relative">
 
                     <!-- Close Button -->
                     <button @click="closeModal"
-                        class="absolute top-4 right-4 w-8 h-8 border-2 bg-orange-400 bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all">
+                        class="absolute top-4 right-4 w-8 h-8 border-2 bg-[#004369] bg-opacity-20 rounded-full flex items-center justify-center hover:bg-opacity-30 transition-all">
                         <Icon name="lucide:x" class="text-gray-200 text-lg" />
                     </button>
 
@@ -107,7 +107,7 @@
                          <div class="flex justify-center">
 
                              <button @click="handleSubmit"
-                             class=" bg-orange-200 text-orange-600 py-2 px-6 font-semibold hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
+                             class=" bg-[#1B7895] textColor py-2 px-6 font-semibold hover:bg-gray-100 transition-colors focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50">
                              SIGN ME UP
                             </button>
                         </div>

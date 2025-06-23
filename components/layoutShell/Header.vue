@@ -21,15 +21,15 @@
                         </button>
                         <NuxtLink to="/" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/' && 'underline'" >Home
                         </NuxtLink>
-                        <NuxtLink to="/" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/about' && 'underline'" >About Us
+                        <NuxtLink to="/about" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/about' && 'underline'" >About Us
                         </NuxtLink>
-                        <NuxtLink to="/" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/contact-us' && 'underline'">Property</NuxtLink>
+                        <NuxtLink to="/property-details" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/property-details' && 'underline'">Property</NuxtLink>
                         <NuxtLink href="/" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/blogs' && 'underline'">Reviews</NuxtLink>
-                        <NuxtLink href="/"
+                        <NuxtLink to="/categories"
                             class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/categories' && 'underline'">Attractions</NuxtLink>
-                        <a href="#" class="textColor hover:text-lightText font-medium transition-colors">FAQ</a>
-                        <a href="#" class="textColor hover:text-lightText font-medium transition-colors">Blogs</a>
-                        <a href="#" class="textColor hover:text-lightText font-medium transition-colors">Contact</a>
+                        <NuxtLink to="/booking-faqs" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/booking-faqs' && 'underline'">FAQ</NuxtLink>
+                        <NuxtLink to="/blogs" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/blogs' && 'underline'">Blogs</NuxtLink>
+                        <Nuxtlink to="/contact-us" class="textColor hover:text-lightText font-medium transition-colors" :class="useRoute().fullPath === '/contact-us' && 'underline'">Contact</NuxtLink>
                     </div>
 
                     <!-- Social Icons -->
