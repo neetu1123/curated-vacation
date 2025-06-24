@@ -25,26 +25,26 @@
                     index % 2 === 0 ? '' : 'bg-white'
                 ]">
                     <div class="relative">
-                        <div class="date-box">
+                        <!-- <div class="date-box">
                             <div class="p-3">
                                 <div class="text-xs font-semibold text-gray-600 uppercase tracking-wide">{{ blog.month
                                     }}</div>
                                 <div class="text-2xl font-bold text-gray-900">{{ blog.day }}</div>
                             </div>
-                        </div>
+                        </div> -->
                         <img :src="blog.image" :alt="blog.title"
                             class="w-full h-64 sm:h-72 md:h-80 object-cover group-hover:scale-105 transition-transform duration-300" />
                     </div>
 
                     <div class="py-6">
-                        <div class="flex items-center gap-1 mb-4">
+                        <!-- <div class="flex items-center gap-1 mb-4">
                             <template v-for="(category, i) in blog.categories" :key="i">
                                 <span class="text-sm font-semibold textColor uppercase tracking-wider">
                                     {{ category }}
                                 </span>
                                 <span v-if="i < blog.categories.length - 1" class="text-gray-400">•</span>
                             </template>
-                        </div>
+                        </div> -->
 
                         <h2
                             class="text-xl sm:text-2xl font-bold text-gray-900 mb-4 group-hover:text-gray-600 transition-colors duration-300">

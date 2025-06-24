@@ -1,10 +1,10 @@
 <template>
     <div class="container mx-auto bg-white">
         <!-- Navigation Tabs -->
-        <nav class="border-b border-gray-200 sticky top-28 bg-white z-30">
+        <nav class="border-b border-gray-200  sticky top-24 bg-white z-30">
             <div class="flex space-x-8 px-6">
                 <button v-for="tab in tabs" :key="tab.id"
-                    class="py-4 px-2 text-sm font-medium text-gray-700 hover:text-teal-600"
+                    class="py-4 px-2 text-sm cursor-pointer font-medium text-gray-700 hover:text-teal-600"
                     :class="{ 'tab-active': activeTab === tab.id }" @click="scrollSmoothToSection(tab.id)">
                     {{ tab.name }}
                 </button>
@@ -156,7 +156,7 @@
                     </div>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6891.418183215019!2d-86.00546030365994!3d30.273868899235136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8893f27adf435501%3A0x58f4f92a2f0bd3a!2sInlet%20Beach%2C%20FL%2032413%2C%20USA!5e0!3m2!1sen!2sin!4v1750258386523!5m2!1sen!2sin"
-                        width="820" height="450" style="border:0;" allowfullscreen loading="lazy"
+                        width="1100" height="450" style="border:0;" allowfullscreen loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
@@ -251,7 +251,7 @@
             </div>
 
             <!-- Booking Sidebar -->
-            <div class="w-96 bg-gray-50 p-6 border-l border-gray-200 sticky top-36 h-screen overflow-y-auto">
+            <div class="w-96 bg-gray-50 p-6 border-l border-gray-200 sticky top-40 h-screen overflow-y-auto">
                 <div class="bg-teal-100 text-teal-800 text-center py-2 px-4 rounded-lg mb-6 font-semibold">
                     BOOK DIRECT & SAVE
                 </div>
@@ -608,9 +608,19 @@ function goToPage(page: number | string) {
 }
 
 function scrollSmoothToSection(sectionId: string) {
+    activeTab.value = sectionId
     const section = document.getElementById(sectionId);
     if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
+        // Calculate position with offset for the fixed header
+        const offset = 180; // Adding extra space below the 28px header
+        const elementPosition = section.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+        // Scroll to the adjusted position
+        window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+        });
     }
 }
 

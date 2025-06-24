@@ -67,41 +67,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Second Section - Smoky Mountain Cabins -->
-    <section
-      class="relative bg-gradient-to-r from-gray-900 to-gray-900 flex items-center justify-center py-20 px-4 lg:px-8">
-      <!-- Background Image Effect with Parallax -->
-      <div class="absolute inset-0 parallax"></div>
-      <div class="absolute inset-0 opacity-20"
-        style="background-image: url('data:image/svg+xml,%3Csvg width=\'40\' height=\'40\' viewBox=\'0 0 40 40\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'white\' fill-opacity=\'0.02\'%3E%3Cpath d=\'M20 20c0 11.046-8.954 20-20 20v20h40V20H20z\'/%3E%3C/g%3E%3C/svg%3E')">
-      </div>
-
-      <div class="relative z-10 max-w-7xl mx-auto text-center">
-        <h2 class="text-xl font-bold text-white mb-6 leading-tight">
-          Smoky Mountain Cabin Rentals with Privacy, Seclusion, and Convenience
-        </h2>
-
-        <div class="space-y-6 text-gray-200 leading-relaxed max-w-5xl mx-auto">
-          <p>
-            Amazing Views Cabin Rentals appreciates your desire for privacy and seclusion during your stay in one of our
-            Gatlinburg cabin rentals or Pigeon Forge Cabin rentals. At our Smoky Mountain cabins, you will be able to
-            enjoy the solitude and serenity of the Smoky Mountains while being just minutes from adventures in
-            Gatlinburg and Pigeon Forge, TN.
-          </p>
-
-          <p>
-            Nearby attractions include the Great Smoky Mountains National Park, Dollywood, Ober Mountain, WonderWorks,
-            and Ripley's Aquarium of the Smokies.
-          </p>
-
-          <p>
-            Our cabin rentals in Gatlinburg, Pigeon Forge, and Sevierville are also just a short day trip to the
-            Biltmore Estate in Asheville, NC.
-          </p>
-        </div>
-      </div>
-    </section>
   </div>
 </template>
 
