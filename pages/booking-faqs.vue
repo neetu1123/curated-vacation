@@ -2,7 +2,7 @@
     <div class="mt-28 min-h-screen py-8">
         <div class="container mx-auto px-4 max-w-4xl">
             <!-- Header Section -->
-            <div class="text-center mb-12">
+            <div class="text-center mb-">
                 <p class="text-sm font-semibold text-gray-600 uppercase tracking-wider mb-4">FAQS</p>
                 <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif text-navy mb-6">
                     Frequently Asked Questions
@@ -14,34 +14,9 @@
                     representative answer any additional questions before you get here or during your stay.
                 </p>
             </div>
-
             <!-- FAQ Accordion -->
-            <div class="space-y-4">
-                <!-- FAQ Item -->
-                <div v-for="(faq, index) in faqs" :key="index" class="bg-white rounded-lg border border-gold shadow-sm">
-                    <button
-                        class="w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-gold focus:ring-opacity-50"
-                        @click="toggleFAQ(index)">
-                        <div class="flex items-center gap-4">
-                            <Icon name="mdi:star-four-points" class="text-gold text-xl flex-shrink-0" />
-                            <span class="text-navy font-medium text-lg">{{ faq.question }}</span>
-                        </div>
-                        <Icon :name="activeIndex === index ? 'mdi:close' : 'mdi:plus'"
-                            class="text-navy text-2xl transition-transform duration-700 flex-shrink-0"
-                            :class="{ 'rotate-45': activeIndex === index }" />
-                    </button>
-                    <div class="overflow-hidden transition-all duration-300 ease-in-out"
-                        :class="{ 'max-h-0': activeIndex !== index, 'max-h-96': activeIndex === index }">
-                        <div class="px-6 pb-5 pt-0">
-                            <div class="pl-10">
-                                <p class="text-gray-600 leading-relaxed">
-                                    {{ faq.answer }}
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <HomeFaq />
+
         </div>
     </div>
 </template>
